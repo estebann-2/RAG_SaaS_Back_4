@@ -21,6 +21,7 @@ class APIDocument(models.Model):  # 👈 Cambié el nombre del modelo
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     conversation = models.ForeignKey("APIConversation", on_delete=models.SET_NULL, null=True, blank=True)  # 👈 Cambié la referencia
     file = models.FileField(upload_to='documents/', validators=[validate_file_extension, validate_file_size])
+    local_path = models.CharField(max_length=512, null=True, blank=True)  # Added field for local file path
     title = models.CharField(max_length=255)
     uploaded_at = models.DateTimeField(auto_now_add=True)
     summary = models.TextField(blank=True, null=True)
@@ -71,4 +72,4 @@ class APIChunk(models.Model):  # 👈 Cambié el nombre del modelo
     embedding = models.JSONField()
 
     def __str__(self):
-        return f"Chunk from {self.document.title}" 
+        return f"Chunk from {self.document.title}"

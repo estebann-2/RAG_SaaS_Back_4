@@ -15654,3 +15654,523 @@ ModuleNotFoundError: No module named 'rag_app_apis.context_processors'
 2025-04-11 06:16:05,048 - INFO - /Users/esteban.caicedo/Library/CloudStorage/OneDrive-WPPCloud/Desktop/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back/RAG_SaaS/settings.py changed, reloading.
 2025-04-11 06:18:18,981 - INFO - /Users/esteban.caicedo/Library/CloudStorage/OneDrive-WPPCloud/Desktop/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back/RAG_SaaS/settings.py changed, reloading.
 2025-04-11 18:53:22,033 - INFO - /Users/esteban.caicedo/Library/CloudStorage/OneDrive-WPPCloud/Desktop/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back/RAG_SaaS/settings.py changed, reloading.
+2025-05-28 03:42:32,892 - WARNING - Not Found: /
+2025-05-28 03:42:33,017 - WARNING - Not Found: /favicon.ico
+2025-05-28 03:42:53,154 - INFO - Procesando documento: Traffic Notes
+2025-05-28 03:42:53,158 - ERROR - Error extracting text from d9b1d8e6-9622-450e-967f-710fa7ebb07e.docx: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 78, in extract_text
+    temp_file.write(file_obj.read())
+                    ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:42:53,186 - WARNING - Documento 'Traffic Notes' no tiene contenido legible.
+2025-05-28 03:46:28,786 - INFO - Procesando documento: Survey_of_small_language_models
+2025-05-28 03:46:28,789 - ERROR - Error extracting text from 9ac6f54d-e00c-4682-9324-c8f3319419a6.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 78, in extract_text
+    temp_file.write(file_obj.read())
+                    ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:46:28,795 - WARNING - Documento 'Survey_of_small_language_models' no tiene contenido legible.
+2025-05-28 03:47:03,523 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:48:53,384 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:49:08,369 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:49:19,122 - INFO - Procesando documento: Survey_of_small_language_models
+2025-05-28 03:49:19,169 - ERROR - Error extracting text from bb12dc82-315e-4e2b-a350-c17fbddd2ac1.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 81, in extract_text
+    local_file.write(file_obj.read())
+                     ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:49:19,174 - WARNING - Documento 'Survey_of_small_language_models' no tiene contenido legible.
+2025-05-28 03:50:04,680 - INFO - Procesando documento: VQGANs
+2025-05-28 03:50:04,683 - ERROR - Error extracting text from 1f9e6e99-496c-4c85-8f66-3d9cdc5b6002.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 81, in extract_text
+    local_file.write(file_obj.read())
+                     ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:50:04,690 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 03:51:55,204 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:52:06,911 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 03:53:43,742 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:54:05,679 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:54:15,344 - INFO - Procesando documento: VQGANs
+2025-05-28 03:54:15,396 - ERROR - Error extracting text from 3a695ab1-62c8-4e59-86e4-fe0273b4c11f.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 77, in extract_text
+    for chunk in file_obj.chunks():
+                 ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:54:15,431 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 03:55:14,359 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:57:42,165 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:57:49,532 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:58:01,596 - INFO - Procesando documento: VQGANs
+2025-05-28 03:58:01,597 - INFO - Processing file: 290aca6d-c542-4ebd-90da-8dce58162c6a.pdf with extension: .pdf
+2025-05-28 03:58:01,600 - INFO - Reading file content...
+2025-05-28 03:58:01,601 - INFO - Using chunks() method to read file
+2025-05-28 03:58:01,601 - ERROR - Error cleaning up temporary file: cannot access local variable 'temp_path' where it is not associated with a value
+2025-05-28 03:58:01,601 - ERROR - Error extracting text: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 81, in extract_text
+    for chunk in file_obj.chunks():
+                 ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 03:58:01,609 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 03:58:35,937 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 03:58:48,040 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:00:42,938 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:03:10,048 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:05:31,339 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:05:56,317 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:06:05,999 - INFO - Procesando documento: VQGANs
+2025-05-28 04:06:06,055 - ERROR - Error extracting text from e24d3be7-2b18-4952-9c09-8d0c2342d94e.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 78, in extract_text
+    temp_file.write(file_obj.read())
+                    ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 04:06:06,064 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:19:08,099 - INFO - Procesando documento: VQGANs
+2025-05-28 04:19:08,103 - ERROR - Error extracting text from 1c57aa28-1bee-485e-9cca-3840bc09b0c6.pdf: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 78, in extract_text
+    temp_file.write(file_obj.read())
+                    ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/utils.py", line 42, in <lambda>
+    read = property(lambda self: self.file.read)
+                                 ^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 48, in _get_file
+    self._file = self.storage.open(self.name, "rb")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^
+AttributeError: 'UniqueFilenameGoogleCloudStorage' object has no attribute '_open'. Did you mean: 'open'?
+2025-05-28 04:19:08,110 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:22:04,047 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:23:04,238 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:23:16,245 - INFO - Procesando documento: VQGANs
+2025-05-28 04:23:16,294 - ERROR - Error extracting text from de3d4247-3e9b-4a40-9c91-f23b87dc016f.pdf: This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 70, in extract_text
+    file_path = file_obj.path  # Get the actual file path from the file object
+                ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:23:16,303 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:25:04,492 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:25:26,257 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:26:16,969 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:26:24,247 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:26:42,250 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:27:28,009 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:28:40,671 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:28:50,754 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:29:15,536 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:29:36,021 - INFO - Procesando documento: VQGANs
+2025-05-28 04:29:36,068 - ERROR - Error extracting text from 3a45767c-428a-4e9e-b48c-38274ff4a403.pdf: This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 70, in extract_text
+    file_path = file_obj.path  # Get the actual file path from the file object
+                ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:29:36,071 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:31:10,408 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:31:29,844 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/models.py changed, reloading.
+2025-05-28 04:31:42,223 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:31:57,436 - ERROR - Internal Server Error: /api/api_upload/
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'local_path' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py", line 40, in post
+    document = APIDocument.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/base.py", line 1020, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/base.py", line 1061, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'local_path' in 'field list'")
+2025-05-28 04:32:43,910 - INFO - Procesando documento: VQGANs
+2025-05-28 04:32:43,912 - ERROR - Error extracting text from 957b8c61-92e1-4158-8a8b-09b986199ff7.pdf: This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 70, in extract_text
+    file_path = file_obj.path  # Get the actual file path from the file object
+                ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:32:43,916 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:34:29,315 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:34:53,878 - INFO - Procesando documento: <built-in method title of str object at 0x10dd85b60>
+2025-05-28 04:34:53,881 - ERROR - Error procesando documento '<built-in method title of str object at 0x10dd85b60>': 'str' object has no attribute 'file'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 105, in process_document
+    text = extract_text(document.file)
+                        ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'file'
+2025-05-28 04:36:07,229 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:36:26,145 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:37:05,211 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:37:39,046 - INFO - Procesando documento: VQGANs
+2025-05-28 04:37:39,049 - ERROR - Error extracting text from 87d5504c-26df-4566-a601-795862f750db.pdf: This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 78, in extract_text
+    file_path = file_obj.path  # Fallback to path if local_path is not available
+                ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:37:39,055 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:39:23,540 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:39:51,046 - INFO - Procesando documento: VQGANs
+2025-05-28 04:39:51,087 - ERROR - Error extracting text from a470b189-2399-45e0-ac21-ad3986954b7f.pdf: This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 81, in extract_text
+    file_path = file_obj.path  # Fallback to path if local_path is not available
+                ^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:39:51,095 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:40:19,228 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:40:34,851 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:42:56,552 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:45:23,771 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:45:43,330 - INFO - Procesando documento: VQGANs
+2025-05-28 04:45:43,333 - INFO - Extracting text from PDF: ee6218b6-c79f-4583-a0b1-a6e74b00cab6.pdf
+2025-05-28 04:45:43,333 - ERROR - Error processing PDF ee6218b6-c79f-4583-a0b1-a6e74b00cab6.pdf: module 'fitz' has no attribute 'open'
+2025-05-28 04:45:43,333 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 04:48:40,812 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:48:57,651 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:49:41,385 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:50:05,877 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/views.py changed, reloading.
+2025-05-28 04:50:15,245 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 99, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:54:53,206 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:55:17,766 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 100, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:56:53,921 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:57:02,874 - ERROR - Error procesando documento 'VQGANs': This backend doesn't support absolute paths.
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 101, in process_document
+    file_path = document.file.path
+                ^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/db/models/fields/files.py", line 62, in path
+    return self.storage.path(self.name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/rag_saas/lib/python3.12/site-packages/django/core/files/storage/base.py", line 121, in path
+    raise NotImplementedError("This backend doesn't support absolute paths.")
+NotImplementedError: This backend doesn't support absolute paths.
+2025-05-28 04:58:06,025 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:58:25,925 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:59:35,927 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 04:59:47,547 - INFO - Procesando documento: VQGANs (/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/02711409-dce8-4f2f-b36f-d4e4d3e588a0.pdf)
+2025-05-28 04:59:47,547 - INFO - Extracting text from PDF: /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/02711409-dce8-4f2f-b36f-d4e4d3e588a0.pdf
+2025-05-28 04:59:47,548 - ERROR - Error extracting text from /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/02711409-dce8-4f2f-b36f-d4e4d3e588a0.pdf: module 'fitz' has no attribute 'open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 74, in extract_text
+    with fitz.open(file_path) as pdf_document:
+         ^^^^^^^^^
+AttributeError: module 'fitz' has no attribute 'open'
+2025-05-28 04:59:47,548 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 05:00:30,319 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 05:00:41,435 - INFO - Procesando documento: VQGANs (/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/11004c23-d470-4602-a254-062c01d77430.pdf)
+2025-05-28 05:00:41,437 - INFO - Extracting text from PDF: /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/11004c23-d470-4602-a254-062c01d77430.pdf
+2025-05-28 05:00:41,438 - ERROR - Error extracting text from /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/11004c23-d470-4602-a254-062c01d77430.pdf: module 'fitz' has no attribute 'open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 76, in extract_text
+    with fitz.open(file_path) as pdf_document:
+         ^^^^^^^^^
+AttributeError: module 'fitz' has no attribute 'open'
+2025-05-28 05:00:41,440 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 05:01:06,272 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 05:01:19,924 - INFO - Procesando documento: VQGANs (/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/b57ac945-fbab-46ae-9316-9ef81f13e6b6.pdf)
+2025-05-28 05:01:19,926 - INFO - Extracting text from PDF: /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/b57ac945-fbab-46ae-9316-9ef81f13e6b6.pdf
+2025-05-28 05:01:19,926 - ERROR - Error extracting text from /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/b57ac945-fbab-46ae-9316-9ef81f13e6b6.pdf: module 'fitz' has no attribute 'open'
+Traceback (most recent call last):
+  File "/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py", line 76, in extract_text
+    with fitz.open(file_path) as pdf_document:
+         ^^^^^^^^^
+AttributeError: module 'fitz' has no attribute 'open'
+2025-05-28 05:01:19,928 - WARNING - Documento 'VQGANs' no tiene contenido legible.
+2025-05-28 05:01:49,473 - INFO - /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/rag_app_apis/utils.py changed, reloading.
+2025-05-28 05:03:44,103 - INFO - Procesando documento: VQGANs (/Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/91491755-3675-40b7-8734-699ffbe03ad7.pdf)
+2025-05-28 05:03:44,105 - INFO - Extracting text from PDF: /Users/esteban.caicedo/Library/CloudStorage/Box-Box/DATA/Esteban/MaIA/3 SEMESTRE/Desarrollo de soluciones cloud/Proyecto/RAG_SaaS_Back_4/media/documents/91491755-3675-40b7-8734-699ffbe03ad7.pdf
+2025-05-28 05:03:45,100 - INFO - Documento leído, longitud: 13623 caracteres
+2025-05-28 05:03:45,101 - INFO - Documento dividido en 2 chunks
+2025-05-28 05:03:48,703 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-28 05:03:50,439 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-28 05:03:50,439 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-05-28 05:03:51,801 - INFO - Documento 'VQGANs' procesado con éxito

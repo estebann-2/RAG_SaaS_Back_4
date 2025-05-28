@@ -8,6 +8,8 @@ from .serializers import DocumentSerializer, MessageSerializer, ConversationSeri
 from .utils import process_document, query_llm
 from .retriever import retrieve_relevant_chunks
 import logging
+import os
+from django.conf import settings
 
 
 # Upload Document API
@@ -42,6 +44,21 @@ class UploadDocumentView(APIView):
             conversation=conversation
         )
 
+        # Save file locally in media/documents
+        media_root = getattr(settings, 'MEDIA_ROOT', 'media')
+        documents_dir = os.path.join(media_root, 'documents')
+        os.makedirs(documents_dir, exist_ok=True)
+
+        local_path = os.path.join(documents_dir, document.file.name.split('/')[-1])
+
+        with open(local_path, 'wb+') as destination:
+            for chunk in uploaded_file.chunks():
+                destination.write(chunk)
+
+        # Store local path in document model
+        document.local_path = local_path
+        document.save()
+
         # Process document asynchronously
         process_document(document)
 
@@ -56,7 +73,8 @@ class UploadDocumentView(APIView):
             "success": True,
             "response": f"Documento '{document_name}' subido y procesado.",
             "conversation_id": conversation.id,
-            "file_url": document.file.url  # Now returns the GCS URL
+            "file_url": document.file.url,  # GCS URL
+            "local_path": local_path  # Local file path
         }, status=status.HTTP_201_CREATED)
 
 
