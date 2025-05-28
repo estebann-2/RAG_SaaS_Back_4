@@ -1,0 +1,16 @@
+Django==4.2.10
+langchain==0.3.19
+django-cors-headers
+setuptools
+mysqlclient==2.2.7
+PyMuPDF==1.25.3
+langchain-community==0.3.18
+djangorestframework
+chardet==3.0.4
+python-docx==1.1.2
+openai==1.65.2
+tiktoken==0.9.0
+drf-yasg
+coreapi
+python-dotenv
+google-cloud-storage

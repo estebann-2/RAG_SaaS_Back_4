@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_saas_app_back  # Puedes usar el nombre que prefieras
+    ports:
+      - "8000:8000"  # Mapea el puerto del host al del contenedor
+    environment:
+      - PORT=8000  # Define la variable de entorno PORT, aunque ya está expuesto en el Dockerfile
+      - OPENAI_API_KEY=${OPENAI_API_KEY}  # Puedes cargar variables de entorno directamente desde el archivo .env
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+    volumes:
+      - .:/app  # Monta el código fuente para facilitar el desarrollo
+    restart: always  # Reinicia el contenedor en caso de fallos
+    env_file:
+      - .env  # Usa este archivo para cargar todas las variables de entorno necesarias
